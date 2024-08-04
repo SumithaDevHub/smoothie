@@ -17,6 +17,8 @@ Welcome to the Smoothie Recipe App! This web application provides a collection o
 
 The Smoothie Recipe App allows users to explore a variety of smoothie recipes, each with detailed information on ingredients, preparation methods, and nutritional content. Users can select their favorite smoothies and view the recipes in an easy-to-read format.
 
+You can access the Smoothie Recipe App online at [smoothie-phg6.onrender.com](https://smoothie-phg6.onrender.com/).
+
 ## Features
 
 - **Browse Smoothie Recipes**: Explore a diverse range of smoothie recipes with detailed information.
@@ -26,7 +28,7 @@ The Smoothie Recipe App allows users to explore a variety of smoothie recipes, e
 
 ## Installation
 
-To get started with the Smoothie Recipe App, follow these steps:
+To get started with the Smoothie Recipe App locally, follow these steps:
 
 1. **Clone the repository:**
 
@@ -58,6 +60,8 @@ To get started with the Smoothie Recipe App, follow these steps:
 2. Browse the available smoothie recipes.
 3. Click on a smoothie to view its detailed recipe.
 
+Alternatively, visit the hosted version at [smoothie-phg6.onrender.com](https://smoothie-phg6.onrender.com/).
+
 ## Technologies Used
 
 - **Node.js**: JavaScript runtime environment
@@ -76,9 +80,6 @@ We welcome contributions to the Smoothie Recipe App! If you'd like to contribute
 4. Push to the branch (`git push origin feature/your-feature`).
 5. Open a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
 ## Contact
 
