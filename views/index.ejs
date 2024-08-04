@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <h1>Smoothie 🥤</h1>
+
+    <form action="/smoothie" method="POST">
+        <button type="submit" value="fruit" name="choice">Fruits</button>
+        <button type="submit" value="green" name="choice">Green</button>
+        <button type="submit" value="protein" name="choice">Protein</button>
+    </form>
+
+    <div class="container">
+        <% if (smoothie) { %>
+            <h2><%= smoothie.name %></h2>
+            <h2>Ingredients List:</h2>
+            <ul>
+                <li><%= smoothie.ingredients.base.name %>, <%= smoothie.ingredients.base.quantity %></li>
+                <% smoothie.ingredients.fruits.forEach(fruit => { %>
+                    <li><%= fruit.quantity %> of <%= fruit.name %></li>
+                <% }); %>
+                <% if (smoothie.ingredients.additional) { %>
+                    <% smoothie.ingredients.additional.forEach(additional => { %>
+                        <li><%= additional.quantity %> of <%= additional.name %></li>
+                    <% }); %>
+                <% } %>
+            </ul>
+        <% } else { %>
+            <h2>Pick your favourite smoothie ingredient ☝️</h2>
+        <% } %>
+    </div>
+</body>
+</html>
